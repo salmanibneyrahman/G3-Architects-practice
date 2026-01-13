@@ -1,0 +1,204 @@
+.work-sans-fonts {
+    font-family: "Work Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+* {
+    box-sizing: border-box;
+}
+
+
+
+/* shared style */
+
+
+.display-flex {
+    display: flex;
+}
+
+
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* dark 1 */
+.banner-font {
+    color: #131313;
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+
+/* dark 3 */
+.grey-font {
+    color: #727272;
+}
+
+
+/* orange color */
+.orange {
+    color: rgba(255, 144, 14, 1);
+}
+
+
+.bold-font {
+    font-size: 2.8rem;
+    font-weight: bold;
+}
+
+
+.banner-description,
+.team-description {
+    line-height: 26px;
+}
+
+
+.bg-light {
+    background-color: rgba(255, 144, 14, 0.1);
+}
+
+
+.banner-btn {
+    background-color: rgba(255, 144, 14, 1);
+    border-radius: 8px;
+    border: none;
+    color: rgba(255, 255, 255, 1);
+    padding: 20px 24px;
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+
+.navbar,
+.banner,
+.team-container {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* main style */
+main {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+
+/* navbar */
+
+
+.navbar {
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.nav-items {
+    list-style: none;
+    margin-right: 30px;
+}
+
+
+.nav-links {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+/* banner style */
+
+.banner-content {
+    margin: 0 auto;
+    text-align: center;
+    max-width: 850px;
+    margin-bottom: 50px;
+}
+
+
+.banner-image {
+    width: 100%;
+    margin-bottom: 45px;
+}
+
+
+.banner-title {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+
+/* team design */
+.team-container {
+    align-items: center;
+    gap: 75px;
+}
+
+
+.team-image {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 85px;
+}
+
+
+#Quick-list {
+    font-size: 2.8rem;
+    font-weight: 500;
+}
+
+
+.team-feature {
+    max-width: 537px;
+}
+
+
+
+
+
+/* responsive design */
+
+/* small device */
+@media screen and (max-width: 576px) {
+
+    .navbar,
+    .navbar-links,
+    .team-container {
+        flex-direction: column;
+    }
+
+    .navbar-links {
+        gap: 24px;
+    }
+
+    /* team section */
+    .team-image {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+    .team-feature {
+        text-align: center;
+    }
+
+}
+
+
+/* medium device */
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    .team-container {
+        flex-direction: column;
+    }
+
+    .team-feature {
+        text-align: center;
+    }
+
+}
